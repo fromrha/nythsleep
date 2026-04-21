@@ -35,10 +35,10 @@ As a developer who lives in the terminal, I wanted something that felt right. A 
    git clone https://github.com/fromrha/nythsleep.git
    ```
 2. **Go Global**:
-   Add the `scripts` folder from your cloned repository to your system **PATH**.
+   Add the cloned repository directory to your system **PATH**.
    *Pro Tip: Run this in PowerShell as Admin (replace `C:\path\to\nythsleep` with your actual path):*
    ```powershell
-   $targetPath = "C:\path\to\nythsleep\scripts"
+   $targetPath = "C:\path\to\nythsleep"
    [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "Machine") + ";$targetPath", "Machine")
    ```
 

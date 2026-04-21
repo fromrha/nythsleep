@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1] - 2026-04-21
+
+### Fixed
+- Fixed global execution issue by moving `nythsleep.bat` to the project root.
+- Fixed `UnicodeEncodeError` when rendering the ANSI banner on standard Windows terminals by forcing UTF-8 encoding in the batch script.
+- Removed the deprecated `scripts` directory to simplify the project structure.
+
 ## [1.1.0] - 2026-04-21
 
 ### Added
