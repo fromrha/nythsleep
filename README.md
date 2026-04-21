@@ -30,17 +30,16 @@ As a developer who lives in the terminal, I wanted something that felt right. A 
 
 ### The "Pro" Way (Recommended)
 
-1. **Create your toolshed**:
+1. **Clone the repository**:
    ```cmd
-   mkdir C:\Tools
+   git clone https://github.com/fromrha/nythsleep.git
    ```
-2. **Deploy the payload**:
-   Move `src/main.py` and `scripts/run.bat` to `C:\Tools`. (Note: Rename `main.py` to `nythsleep.py` in your tools folder if you wish).
-3. **Go Global**:
-   Add `C:\Tools` to your system **PATH**.
-   *Pro Tip: Run this in PowerShell as Admin:*
+2. **Go Global**:
+   Add the `scripts` folder from your cloned repository to your system **PATH**.
+   *Pro Tip: Run this in PowerShell as Admin (replace `C:\path\to\nythsleep` with your actual path):*
    ```powershell
-   [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Tools", "Machine")
+   $targetPath = "C:\path\to\nythsleep\scripts"
+   [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "Machine") + ";$targetPath", "Machine")
    ```
 
 ---
