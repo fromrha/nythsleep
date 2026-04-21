@@ -1,8 +1,8 @@
 # 🌙 Nythsleep — The Ultimate Windows 11 Power Management CLI
 
-[![GitHub License](https://img.shields.io/github/license/fromrha/nythsleep?style=flat-square&color=blue)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/fromrha/nythsleep?style=flat-square)](https://github.com/fromrha/nythsleep/stargazers)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/fromrha/nythsleep?style=flat-square)](https://github.com/fromrha/nythsleep/stargazers)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square&logo=python)](https://www.python.org/)
 
 **Control your computer's rest as easily as you control your own.**
 
