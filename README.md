@@ -8,21 +8,21 @@
 
 I have a routine: I can't sleep without some ASMR or ambient music playing in the background. My computer serves as my speaker, but I hated leaving it running all night—and I hated the clunky, bright Windows menus even more. 
 
-As a developer who lives in the terminal, I wanted something that felt right. No UI clutter, just a sleek, purple-tinted command that does exactly what I need and nothing more. I built Nythsleep for myself, and now I'm sharing it with you.
+As a developer who lives in the terminal, I wanted something that felt right. A sleek, purple-tinted command that does exactly what I need and nothing more. I built Nythsleep for myself, and now I'm sharing it with you.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🚀 **Lightning Fast**: Execute power commands in seconds.
-- 🕒 **Custom Timers**: Set precision timers (e.g., `1h 30m`) for automatic actions.
-- 🎨 **Beautiful Interface**: Clean, color-coded CLI experience.
-- 🌍 **Global Access**: Call it from any terminal (CMD or PowerShell).
-- 🛠️ **Multiple Actions**: Shutdown, Restart, Sleep, or Logout.
+- **Lightning Fast**: Execute power commands in seconds.
+- **Custom Timers**: Set precision timers (e.g., `1h 30m`) for automatic actions.
+- **Beautiful Interface**: Clean, color-coded CLI experience.
+- **Global Access**: Call it from any terminal (CMD or PowerShell).
+- **Multiple Actions**: Shutdown, Restart, Sleep, or Logout.
 
 ---
 
-## 🚀 Quick Setup
+## Quick Setup
 
 ### The "Pro" Way (Recommended)
 
@@ -41,7 +41,7 @@ As a developer who lives in the terminal, I wanted something that felt right. No
 
 ---
 
-## 🎮 How to Use
+## How to Use
 
 Simply type:
 ```cmd
@@ -58,7 +58,7 @@ nythsleep
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Python not found?** Ensure Python 3.8+ is installed and in your PATH.
 - **Access Denied?** Some actions require Administrator privileges.
@@ -66,7 +66,7 @@ nythsleep
 
 ---
 
-## 💎 Credits
+## Credits
 
 Crafted with ❤️ by **Fromrha 2026**.
 
@@ -75,6 +75,6 @@ Crafted with ❤️ by **Fromrha 2026**.
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
