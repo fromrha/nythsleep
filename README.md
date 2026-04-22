@@ -18,9 +18,11 @@ As a developer who lives in the terminal, I wanted something that felt right. A 
 
 - **Lightning Fast**: Execute power commands in seconds.
 - **Custom Timers**: Set precision timers (e.g., `1h 30m`) for automatic actions.
-- **Beautiful Interface**: Clean, color-coded CLI experience.
-- **Global Access**: Call it from any terminal (CMD or PowerShell).
-- **Multiple Actions**: Shutdown, Restart, Sleep, or Logout.
+- **Premium Themes**: Choose between `Lavender`, `Midnight`, `Sunset`, and `Forest`.
+- **Insomnia Mode**: Keep your machine awake when you need it most.
+- **Battery Triggers**: Trigger actions automatically at specific battery levels.
+- **Smart Notifications**: Native Windows notifications 60s before any action.
+- **Global Access**: Call it from any terminal with full flag support.
 
 ![Nythsleep Demo](assets/demo.png)
 
@@ -44,20 +46,24 @@ As a developer who lives in the terminal, I wanted something that felt right. A 
 
 ---
 
-## How to Use
+### CLI Flags (Pro Features)
+You can now bypass the menu entirely using flags:
 
-Simply type:
-```cmd
-nythsleep
-```
-
-### Timer Magic
-| Command | Effect |
+| Flag | Action |
 | :--- | :--- |
-| `1h` | Shutdown in 1 hour |
-| `30m` | Restart in 30 minutes |
-| `2h 15m` | Sleep in 2 hours 15 mins |
-| `(Enter)` | Immediate action |
+| `-s`, `--shutdown` | Power off completely |
+| `-r`, `--restart` | Reboot machine |
+| `-z`, `--sleep` | Put to sleep |
+| `-l`, `--logout` | Sign out |
+| `-t`, `--timer` | Set a timer (e.g. `-t 1h 30m`) |
+| `-i`, `--insomnia` | Enable "Keep Awake" mode |
+| `-b`, `--battery` | Trigger at battery % (e.g. `-b 20`) |
+| `--theme` | Select theme (`midnight`, `sunset`, `forest`) |
+
+**Example:**
+```cmd
+nythsleep --theme sunset --timer 30m --sleep
+```
 
 ---
 

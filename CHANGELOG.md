@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.0] - 2026-04-22
+
+### Added
+- **Pro Features**: Added advanced power management capabilities.
+- **Theme System**: Choose between `lavender`, `midnight`, `sunset`, and `forest` themes using the `--theme` flag.
+- **Insomnia Mode**: Prevent system and display sleep using the `--insomnia` flag.
+- **Battery Monitoring**: Trigger actions at a specific battery percentage using the `--battery` flag.
+- **Desktop Notifications**: Native Windows notifications triggered 60 seconds before a scheduled action.
+- **Argparse Integration**: Full support for CLI flags (-s, -r, -z, -l, -t, -i, -b).
+- **Pre-action Notifications**: Automatic notification 1 minute before the timer ends.
+
+### Changed
+- **UI Refactoring**: Colors and banners are now dynamically generated based on the selected theme.
+- **Zero-Dependency Core**: All new features implemented using Python's built-in `ctypes`, `argparse`, and `subprocess`.
+
+
 ## [1.1.1] - 2026-04-21
 
 ### Fixed
