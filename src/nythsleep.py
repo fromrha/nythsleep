@@ -376,8 +376,28 @@ def confirm(action_name: str, timer_secs: int, battery_target: int = None, auto_
 
 # ── CLI Arguments ─────────────────────────────────────────────────────────────
 
+class CustomArgumentParser(argparse.ArgumentParser):
+    def error(self, message):
+        if os.name == "nt":
+            os.system("")
+        print(f"\n  {RED}{BOLD}Error:{RESET} {WHITE}{message}{RESET}")
+        
+        if "-b/--battery" in message and "expected one argument" in message:
+            print(f"  {GRAY}The -b flag requires a battery percentage number.{RESET}")
+            print(f"  {GRAY}Example: {RESET}{GREEN}nsleep -s -b 15{RESET} {GRAY}(Shutdown when battery hits 15%){RESET}\n")
+        elif "-t/--timer" in message and "expected one argument" in message:
+            print(f"  {GRAY}The -t flag requires a time value.{RESET}")
+            print(f"  {GRAY}Example: {RESET}{GREEN}nsleep -z -t 45m{RESET} {GRAY}(Sleep in 45 minutes){RESET}\n")
+        elif "invalid int value" in message and "-b/--battery" in message:
+            print(f"  {GRAY}The -b flag expects a plain number without the % sign.{RESET}")
+            print(f"  {GRAY}Example: {RESET}{GREEN}nsleep -s -b 20{RESET}\n")
+        else:
+            print(f"  {GRAY}Run nsleep -h for full usage instructions.{RESET}\n")
+        sys.exit(2)
+
 def parse_args():
-    parser = argparse.ArgumentParser(description="NythSleep - A stylish Windows 11 power management CLI tool.")
+    parser = CustomArgumentParser(description="NythSleep - A stylish Windows 11 power management CLI tool.")
+
     
     # Action group (mutually exclusive)
     action_group = parser.add_mutually_exclusive_group()
