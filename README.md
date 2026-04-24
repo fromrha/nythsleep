@@ -59,7 +59,7 @@ You can now bypass the interactive menu entirely using flags.
 | `-t`, `--timer` | Set a timer (e.g. `-t 1h 30m`) |
 | `-i`, `--insomnia` | Enable "Keep Awake" mode |
 | `-b`, `--battery` | Trigger at battery % (e.g. `-b 20`) |
-| `--theme` | Select theme (`midnight`, `sunset`, `forest`) |
+| `--theme` | Select theme (`lavender (default)`, `midnight`, `sunset`, `forest`) |
 
 **Examples:**
 ```cmd
