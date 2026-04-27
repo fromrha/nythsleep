@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Added
 - Dedicated interactive loop for Insomnia Mode (`-i`) with elapsed time/countdown display.
+- One-click `setup.bat` script for automatic PATH configuration on Windows.
 
 ### Fixed
 - Improved strict validation for timer inputs (`-t`), ensuring units (`h`, `m`, `s`) are provided.

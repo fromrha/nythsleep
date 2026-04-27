@@ -30,15 +30,21 @@ As a developer who lives in the terminal, I wanted something that felt right. A 
 
 ## Quick Setup
 
-### The "Pro" Way (Recommended)
-
+### 🚀 The Easiest Way (Recommended)
 1. **Clone the repository**:
    ```cmd
    git clone https://github.com/fromrha/nythsleep.git
    ```
-2. **Go Global**:
-   Add the cloned repository directory to your system **PATH**.
-   *Pro Tip: Run this in PowerShell as Admin (replace `C:\path\to\nythsleep` with your actual path):*
+2. **Run the setup**:
+   Double-click `setup.bat` in the project folder. That's it! 
+   *(This automatically adds Nythsleep to your PATH safely via PowerShell)*
+
+---
+
+### 🛠️ The Manual Way (Pro)
+If you prefer doing things manually:
+1. Add the cloned repository directory to your system **PATH**.
+2. *Pro Tip: Run this in PowerShell as Admin (replace `C:\path\to\nythsleep` with your actual path):*
    ```powershell
    $targetPath = "C:\path\to\nythsleep"
    [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "Machine") + ";$targetPath", "Machine")
